@@ -6,7 +6,7 @@
 ```
   docker compose -f .\docker-compose-dev.yml up -d
 ```
-4- Finalizada la creacion de los contenedores, se debe ingresar al contenedor api-app-1  
+4- Finalizada la creacion de los contenedores, se debe ingresar al contenedor php-1  
 5- En la pestaña Exec, ejecutar el siguiente comando:  
 ```
   composer create-project laravel/laravel proyecto "11.*"
