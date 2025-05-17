@@ -21,5 +21,5 @@
   DB_USERNAME=root  
   DB_PASSWORD=1234
 ```
-8- Ejecute el comando *php artisan migrate* para crear las tablas, la base de datos ya fue creada con anterioridad 
+8- Ejecute el comando *php artisan migrate* para crear las tablas, la base de datos ya fue creada con anterioridad  
 9- Inicie el contenedor api-app-1 y comience a trabajar en su aplicación  
