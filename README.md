@@ -1,10 +1,10 @@
-# docker-laravel
+# docker-laravel  
 
-1- Crear carpeta donde contendra su aplicacion laravel
-2- Copiar los archivos Dockerfile y docker-compose-dev.yml
-3- Ejecutar el siquiente comando:
-  docker compose -f .\docker-compose-dev.yml up -d
-4- Finalizada la creacion de los contenedores, se debe ingresar al contenedor api-app-1
+1- Crear carpeta donde contendra su aplicacion laravel  
+2- Copiar los archivos Dockerfile y docker-compose-dev.yml  
+3- Ejecutar el siquiente comando:  
+  docker compose -f .\docker-compose-dev.yml up -d  
+4- Finalizada la creacion de los contenedores, se debe ingresar al contenedor api-app-1  
 5- En la pestaña Exec, ejecutar el siguiente comando:
   composer create-project laravel/laravel proyecto "11.*"
 6- Una vez finalizada la descarga de los archivos del proyecto, corte los archivos de la carpeta "proyecto" y peguelos en la raiz, y elimine la carpeta "proyecto"
