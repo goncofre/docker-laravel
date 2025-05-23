@@ -4,7 +4,7 @@ services:
   api-app:
     image: docker.io/bitnami/laravel:11
     ports:
-      - '3002:8000'
+      - '3001:8000'
     environment:
       - DB_HOST=db-mysql
       - DB_PORT=3306
@@ -23,14 +23,14 @@ services:
     volumes:
       - ./:/var/www/html
     ports:
-      - '9203:9000'
+      - '9202:9000'
     depends_on:
       - api-app # O la dependencia que realmente necesite
 
   db-mysql:
     image: mysql:8.1.0
     ports:
-      - '3003:3306'
+      - '3002:3306'
     environment:
       MYSQL_DATABASE: db_practica
       MYSQL_ROOT_PASSWORD: 1234
@@ -40,7 +40,7 @@ services:
   phpmyadmin:
     image: phpmyadmin:5.2.1-apache
     ports:
-      - '3004:80'
+      - '3003:80'
     environment:
       PMA_ARBITRARY: 1
       PMA_HOST: db-mysql
