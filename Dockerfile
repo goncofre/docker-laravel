@@ -1,4 +1,4 @@
-FROM php:8.3.6-fpm-alpine
+FROM php:8.3-fpm-alpine
 
 WORKDIR /var/www/html
 
@@ -7,6 +7,7 @@ RUN apk add --no-cache $PHPIZE_DEPS linux-headers \
     libzip-dev \
     openjdk11 \
     libxml2-dev \
+    nodejs npm \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
